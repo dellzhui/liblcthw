@@ -4,6 +4,7 @@
 #include <time.h>
 #include "common.h"
 
+#ifdef _WIN32
 int InspurPorting_Sleep(unsigned int time)
 {
     Sleep(time);
@@ -139,3 +140,4 @@ DWORD WINAPI InspurPorting_Thread_Write(LPVOID arg)
     }  
     return NULL;  
 } 
+#endif
