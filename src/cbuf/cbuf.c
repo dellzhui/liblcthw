@@ -23,7 +23,7 @@ U64 CBuf_Fifo_Get(DATABUF *buf, U64 len)
     return len;
 }
 
-U64 InspurPorting_Fifo_Put(DATABUF *buf, U64 len)
+U64 Cbuf_Fifo_Put(DATABUF *buf, U64 len)
 {
     U64 l;
     len = min(len, fifo->size - fifo->in + fifo->out);
